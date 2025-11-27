@@ -202,7 +202,7 @@
 </head>
 <body>
     <div class="header">
-        <img class="school-logo" src="images/school-logo.png" alt="School Logo">
+        <img class="school-logo" src="https://164471.logineonrw-lms.de/pluginfile.php/1/core_admin/logocompact/300x300/1763601159/LMG.png" alt="LMG Logo">
         <h1>The Great LMG 10D Book Review Page</h1>
     </div>
     
@@ -222,7 +222,7 @@
             "Hanife", "Greta", "Fabio J.", "A. Viktor", "Ferdinand", "Amadea",
             "Fabio E.", "Jana-Aurelia", "Cecilia", "Charlie", "Laura", "Maria",
             "Paula", "Artur", "Sarah", "Katharina", "Oryna", "Varvara",
-            "Johan Carl Leo Liselotte", "Ben W.", "Matthis", "Zamir"
+            "Johan", "Liselotte", "Leo", "Ben W.", "Matthis", "Zamir"
         ];
 
         const gallery = document.getElementById('gallery');
@@ -237,7 +237,7 @@
             card.innerHTML = `
                 <div class="image-container">
                     <img class="student-image" 
-                         src="images/${fileName}.png" 
+                         src="${fileName}.png" 
                          alt="${name}"
                          onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=placeholder-text>${name.charAt(0)}</div>'">
                 </div>
@@ -253,7 +253,7 @@
             const modalImage = document.getElementById('modalImage');
             const modalName = document.getElementById('modalName');
             
-            modalImage.src = `images/${fileName}.png`;
+            modalImage.src = `${fileName}.png`;
             modalName.textContent = name;
             modal.classList.add('active');
         }
